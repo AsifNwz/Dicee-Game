@@ -131,7 +131,8 @@ function play() {
   }
 }
 function restart() {
-  $("#dice__btn").text("Restart"),
+  $("#dice__btn").css("display", "none"),
+    $(".restart").css("display", "block"),
     (number1 = []),
     (number2 = []),
     (clickCount = 0),
@@ -140,4 +141,8 @@ function restart() {
 }
 $("#dice__btn").click(function () {
   play();
+});
+
+$(".restart").click(function () {
+  location.reload();
 });

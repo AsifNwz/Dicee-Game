@@ -106,14 +106,16 @@ p {
 }
 
 
-
+.restart {
+    display: none;
+}
 
 
 .score {
     margin: 15% 15% 0 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: min-content 2.5rem;
+    grid-auto-rows: min-content;
     gap: 2px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -129,7 +131,6 @@ p {
     font-size: 2.5rem;
 
 }
-
 
 
 @media (max-width:1200px) {
@@ -148,7 +149,7 @@ p {
         margin: 60% 25% 0 25%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: min-content 80px;
+        grid-auto-rows: min-content;
         gap: 10px;
         flex-wrap: wrap;
         justify-content: space-between;
