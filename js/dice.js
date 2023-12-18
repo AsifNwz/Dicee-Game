@@ -45,7 +45,7 @@ function diceRoll1() {
     number1.push(t),
     setTimeout(() => {
       $("h1").text("Wait...AI is playing");
-    }, 500);
+    }, 1000);
 
   var txt1 = $("<div></div>").text(t);
   $(".score").append(txt1);
@@ -90,7 +90,7 @@ function diceRoll2() {
     number2.push(t),
     setTimeout(() => {
       $("h1").text("Your turn");
-    }, 500);
+    }, 1000);
 
   var txt2 = $("<div></div>").text(t);
   $(".score").append(txt2);
@@ -100,7 +100,7 @@ function play() {
     diceRoll1(),
       setTimeout(() => {
         diceRoll2();
-      }, 1000),
+      }, 2000),
       clickCount++,
       $("#dice__btn").text(maxClicks - clickCount + " / " + maxClicks);
   else {
@@ -117,7 +117,7 @@ function play() {
       $("h1").text("Calculating. . ."),
       setTimeout(() => {
         $("h1").text(winner), new Audio("./sounds/winner.mp3").play();
-      }, 1e3);
+      }, 2000);
 
     // let yourTotal = number1.reduce((x, y) => x + y, 0);
     // let aiTotal = number2.reduce((x, y) => x + y, 0);
